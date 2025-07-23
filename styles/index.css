@@ -107,7 +107,7 @@ div ul a {
     
 }
 /* plants section */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .plants-card-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -120,8 +120,8 @@ div ul a {
     }
     .plants-container {
    /* border: 1px solid black; */
-   margin: 0 auto;
-   padding: 0 100px;
+   /* margin: 0 auto;
+   padding: 0 100px; */
    
-}
-}
+/* } */
+/* } */ 
