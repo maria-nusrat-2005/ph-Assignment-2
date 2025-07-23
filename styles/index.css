@@ -1,5 +1,5 @@
 .shop-cart {
-  border: 1px  solid red;
+  /* border: 1px  solid red; */
     width: 20px;
     height: 20px;
 
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px 100px;
 }
 .logo-flow {
     width: 100px;
@@ -18,10 +18,11 @@
     padding: 10px 5px;
 }
 div ul{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style-type: none;
+    margin-right: 70px;
     gap: 20px;
     text-decoration: none;
     
@@ -34,16 +35,93 @@ div ul a {
      color: #8987A1;
 }
 .banner {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
-    width: 900px;
+    /* width: 1400px; */
+    justify-content: space-evenly;
     height: auto;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px 200px;
+    margin-bottom: 100px;
     padding: 50px auto;
 
 }
 .banner-title {
     font-size: 40px;
     
+}
+.plants-container {
+   /* border: 1px solid black; */
+   margin: 0 auto;
+   padding: 0 100px;
+   
+}
+.section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.plant-pera {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px 125px;
+}
+/* .plant-card {
+    border: 1px solid black;
+  
+
+} */
+.plants-card-container {
+ /* border: 1px solid red; */
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ margin: 50px 150px;
+ gap: 20px;
+
+}
+
+.plants-card-container img {
+    width: 100%;
+    height: auto;
+
+}
+.btn-primary {
+    background-color: #E95A08;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: red;
+   
+}
+.h-class {
+    text-align: center;
+   margin: 8px auto;
+
+}
+.head {
+    font-weight: 300;
+    
+}
+/* plants section */
+@media screen and (max-width: 576px) {
+    .plants-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-primary {
+        width: 100%;
+         background-color: red;
+    color: white;
+    padding: 5px 5px;
+    margin: 0 auto;
+    }
+    .plants-container {
+   /* border: 1px solid black; */
+   margin: 0 auto;
+   padding: 0 100px;
+   
+}
 }
