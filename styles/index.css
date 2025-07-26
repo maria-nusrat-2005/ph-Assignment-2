@@ -84,7 +84,7 @@
 .plants-container {
    /* border: 1px solid black; */
    margin: 0 auto;
-   padding: 0 100px;
+   padding: 0 0;
    
 }
 .section-title {
@@ -96,7 +96,7 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
-    padding: 5px 125px;
+    padding: 5px 0;
 }
 .plant-card {
     /* border: 1px solid black; */
@@ -136,7 +136,7 @@
 }
 .plants-section {
     /* border: 1px solid black; */
-       width: 1200px;
+      max-width: 1200px;
     margin: 20px auto;
 }
 .head {
@@ -145,36 +145,37 @@
 }
 
 .flower-store-section{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     margin: 200px auto;
  
     gap: 100px;
      position: relative;
-      width: 1140px;
-      height: 597px;
+     max-width: 1140px;
+      height: auto;
       display: flex;
       background-color: #f9f9f9;
       font-family: Arial, sans-serif;
    
 }
 .plant {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .flower-list {
 
    list-style-type: disc;
  margin: 20px auto;
-  font-size: 26px;
+  font-size: 20px;
  
 }
 .text-color-2 {
     color:#6B7280;
 }
-.flower-div {
+/* .flower-div {
   border: 1px solid blueviolet;
-}
+   
+} */
 .flower-img {
   position: relative;
   width: 100%;
@@ -193,20 +194,147 @@
     /* You can adjust size */
   z-index: 10;
 }
+.card-container {
+    border: 1px solid #E95A08;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1200px;
+  
+}
+.card {
+    font-size: 40px;
+}
+.card-description{
+    font-size: 20px;
+    padding: 0 300px;
+}
+.promo-card {
+  
+      border: 1px solid black;
+      margin: 10px auto;
+      max-width: 1200px;
+     
+    display: flex;
+    gap: 20px;
+    
+
+}
+.promo-left {
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+      flex: 1;
+}
+.promo-text1 {
+  
+   background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-bloom.png');
+    font-size: 25px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+    color: white;
+    height: 205px;
+    border-radius: 14px;
+    background-size: cover;
+  
+}
+.promo-text1 a, .promo-text2 a ,.promo-text3 a {
+    color: white;
+    font-size: 20px;
+}
+.promo-text2 {
+      background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-ana.png');
+    font-size: 25px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+    color: white;
+    height: 205px;
+    border-radius: 14px;
+    background-size: cover;
+}
+.promo-text3 {
+         background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-zabo.png');
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 430px;
+    border-radius: 14px;
+       display: flex;
+       color: white;
+       flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.promo-right {
+    flex: 2;
+   
+}
+
+
+
 /* nav-bar responsive */
 @media screen and (max-width: 576px){
    
-    .nav-list {
+    .nav-list, .trusted-badge {
         display: none;
     }
     .banner {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .banner-image {
+    .banner-image, .flow-image {
         width: 100%;
     }
     .banner-container {
         width: 100%;
+    }
+    .plants-section {
+        flex-direction: column;
+    }
+    .plants-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flower-store-section {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .flower-div {
+        padding:0 20px;
+    }
+    .plant {
+        font-size: 24px;
+    }
+    .card-description {
+        font-size: 14px;
+        padding: 0;
+    }
+    .promo-card {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .promo-left, .promo-right {
+        width: 100%;
+        flex: 1;
+    }
+    .promo-text3, .promo-text1, .promo-text2 {
+        height: auto;
+        padding: 20px;
+        text-align: center;
     }
 }
