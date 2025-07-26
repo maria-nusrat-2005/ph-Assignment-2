@@ -1,3 +1,10 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 .shop-cart {
   /* border: 1px  solid red; */
     width: 20px;
@@ -5,6 +12,7 @@
 
   
 }
+
 .nav-links-container {
     display: flex;
     align-items: center;
@@ -172,30 +180,24 @@
 .text-color-2 {
     color:#6B7280;
 }
-/* .flower-div {
-  border: 1px solid blueviolet;
-   
-} */
+
 .flower-img {
   position: relative;
   width: 100%;
-  max-width: 570px; /* Or whatever width you want for the image */
+  max-width: 570px; 
 }
 
 .trusted-badge {
   position: absolute;
-  /* border: 1px solid #E95A08; Border color */
   border-radius: 50%;
   top: 0; 
-  right: -2px; /* Adjust this to position the badge */
-  /* Adjust this to fine-tune placement */
+  right: -2px; 
   transform: translate(50%, -50%);
   width: 300px;
-    /* You can adjust size */
+ 
   z-index: 10;
 }
 .card-container {
-    border: 1px solid #E95A08;
     text-align: center;
     margin: 10px auto;
     max-width: 1200px;
@@ -210,7 +212,6 @@
 }
 .promo-card {
   
-      border: 1px solid black;
       margin: 10px auto;
       max-width: 1200px;
      
@@ -283,9 +284,79 @@
     flex: 2;
    
 }
+/* join sec css */
+.join-section {
+    background-image: url('../assets/news-letter-bg.png');
+    padding: 100px 0;
+ background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.join-section-container{
+   
+    margin: 100px auto;
+    max-width: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-field {
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+      width: 100%;
+      
+    
+}
+#join-section-input {
+    padding: 10px ;
+    width: 75%;
+   
+}
+.btn {
+    background-color: #E95A08;
+    padding: 10px;
+    color: #f9f9f9;
+    border: none;
+     width: 25%;
 
+}
+.title {
+    font-size: 30px;
+    color: #f9f9f9;
+}
+.footer-container {
+ 
+    display: flex;
+ 
+   justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+footer ul li {
+   
+    list-style: none;
+    line-height: 2;
+}
+.icon-container img {
+    width: 36px;
+    height: 36px;
+    
+}
+.icon-container {
+    display: flex;
+  gap: 24px;
 
+    
+}
+.footer-div-1, .footer-div-2, .footer-div-3, .icon-container{
+    flex: 1;
+}
 /* nav-bar responsive */
 @media screen and (max-width: 576px){
    
@@ -337,4 +408,14 @@
         padding: 20px;
         text-align: center;
     }
+    .join-section {
+     
+        padding: 30px 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+   
+
 }
